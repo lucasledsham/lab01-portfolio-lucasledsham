@@ -8,7 +8,7 @@ Inclua informações sobre o funcionamento básico e principais funcionalidades.
 Adicione aqui imagens dos protótipos (wireframes, telas, diagramas, etc.).
 
 Exemplo:  
-![Tela Inicial](./imagens/prototipo1.png)  
+![Tela Inicial](./prototipos/tela-inicial.png)  
 ![Tela de Login](./imagens/prototipo2.png)  
 
 ## 🛠 Tecnologias Previstas
