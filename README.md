@@ -1,7 +1,7 @@
-# 📌 Nome do Projeto
+# 📌 Portfólio profissional Lucas Ledsham
 
 ## 📖 Descrição do Projeto
-Este é um projeto de portfólio pessoal criado para apresentar minhas habilidades, projetos desenvolvidos, formas de contato e outras informações relevantes sobre meu trabalho. 
+Este é um projeto de portfólio profissional criado para apresentar minhas habilidades, projetos desenvolvidos, formas de contato e outras informações relevantes sobre meu trabalho. 
 
 ## 🖼️ Protótipos
 Adicione aqui imagens dos protótipos (wireframes, telas, diagramas, etc.).
