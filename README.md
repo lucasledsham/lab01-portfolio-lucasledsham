@@ -9,7 +9,7 @@ Adicione aqui imagens dos protótipos (wireframes, telas, diagramas, etc.).
 
 Exemplo:  
 ![Tela Inicial](./prototipos/tela-inicial.png)  
-![Tela de Login](./imagens/prototipo2.png)  
+![Tela de Login](./prototipos/tela-contato.png)  
 
 ## 🛠 Tecnologias Previstas
 - [ ] **Frontend:** Descrever as tecnologias previstas (ex: HTML, CSS, JavaScript, React, etc.)
