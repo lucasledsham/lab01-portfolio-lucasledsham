@@ -13,7 +13,5 @@ Tela Contato:
 ![Tela de Contato](./prototipos/tela-contato.png)  
 
 ## 🛠 Tecnologias Previstas
-- [ ] **Frontend:** Descrever as tecnologias previstas (ex: HTML, CSS, JavaScript, React, etc.)
-- [ ] **Backend:** Descrever as tecnologias previstas (ex: Node.js, Java, Python, etc.)
-- [ ] **Banco de Dados:** Ex: MySQL, PostgreSQL, MongoDB, etc.
-- [ ] **Outros:** Bibliotecas, APIs ou ferramentas extras.
+- [ ] **Frontend:** HTML, CSS e JavaScript
+
