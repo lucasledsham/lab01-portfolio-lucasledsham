@@ -1,8 +1,7 @@
 # 📌 Nome do Projeto
 
 ## 📖 Descrição do Projeto
-Breve explicação sobre o objetivo do projeto, problema que ele resolve e público-alvo.  
-Inclua informações sobre o funcionamento básico e principais funcionalidades.  
+Este é um projeto de portfólio pessoal criado para apresentar minhas habilidades, projetos desenvolvidos, formas de contato e outras informações relevantes sobre meu trabalho. 
 
 ## 🖼️ Protótipos
 Adicione aqui imagens dos protótipos (wireframes, telas, diagramas, etc.).
