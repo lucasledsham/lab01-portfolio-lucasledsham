@@ -1,4 +1,4 @@
-# 📌 Portfólio Profissional Lucas Ledsham
+# Portfólio Profissional Lucas Ledsham
 
 ## 📖 Descrição do Projeto
 Este é um projeto de portfólio profissional criado para apresentar minhas habilidades, projetos desenvolvidos, formas de contato e outras informações relevantes sobre meu trabalho. 
