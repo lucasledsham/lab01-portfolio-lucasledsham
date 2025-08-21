@@ -1,0 +1,144 @@
+body {
+  font-family: "Cormorant Garamond", serif;
+  font-family: "Playfair Display", serif;
+  margin: 0px;
+  background-color: #fff9f3;
+  margin-top: 40px;
+  scroll-behavior: smooth;
+  margin-bottom: 80px;
+}
+
+::selection {
+  background-color: #3b4518;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: #3b4518;
+  color: white;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+p {
+  line-height: 1.2;
+}
+
+/* PROJETOS */
+
+#projetos-secao {
+  display: grid;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 40px;
+  grid-template-columns: 1fr;
+  gap: 60px;
+}
+
+.projetos-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.projeto-mockup {
+  height: 730px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.projeto-info {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  margin-left: 50px;
+}
+
+.projeto-info img {
+  width: 250px;
+  margin: 10px;
+  margin-bottom: 40px;
+}
+
+#hr-logo {
+  height: 110px;
+  width: 300px;
+}
+
+#pbpt-logo {
+  width: 300px;
+}
+
+.projeto-info p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.4rem;
+  display: grid;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.projeto-tecnologias {
+  display: flex;
+  gap: 40px;
+}
+
+.projeto-tecnologias img,
+.projeto-github a img {
+  width: 50px;
+  perspective: 1000px;
+}
+
+.imagem {
+  transition: transform 0.3s;
+}
+
+.projeto-tecnologias img:hover {
+  transform: rotateY(30deg);
+}
+
+.projeto-github {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.projeto-github a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.projeto-github a h2 {
+  margin-bottom: 30px;
+}
+
+.projeto-github img {
+  display: block;
+}
+
+.projeto-github h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.4rem;
+  color: #222b06;
+  margin: 0;
+}
