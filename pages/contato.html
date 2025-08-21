@@ -20,20 +20,27 @@
 </head>
 
 <body>
+
+  // TODO: Arrumar menu para estar centralizado igual as outras paginas
   <!-- Menu -->
   <header class="header">
     <a class="logo" href="../index.html"><img src="../assets/fotos/logo.svg" alt="Logo Lucas Ledsham"></a>
 
     <nav class="primaria">
       <ul class="menu">
-        <li class="inicio"><a href="../index.html">Início</a></li>
-        <!-- <li class="formacao"><a class="anchor" href="/index.html">Formação</a></li> -->
-        <li class="projetos"><a href="/">Projetos</a></li>
-        <li class="contato"><a href="/pages/contato.html">Contato</a></li>
+        <li class="inicio" id="inicio-tradutor"><a href="../index.html">Início</a></li>
+        <li id="projetos"><a href="../pages/projetos.html">Projetos</a></li>
+        <li id="sobreMim"><a class="anchor">Sobre Mim</a></li>
+        <li id="contato"><a href="../pages/contato.html">Contato</a></li>
+        <button id="lang-btn">
+          <img id="lang-flag" src="../assets/icones/reino-unido.svg" alt="English" width="30" />
+        </button>
       </ul>
     </nav>
-
   </header>
+
+  <img id="detalhe" src="../assets/fotos/detalhe.svg" alt="">
+  <!-- /menu -->
 
   <img class="detalhe" src="../assets/fotos/detalhe.svg" alt="">
   <!-- /menu -->
@@ -53,6 +60,8 @@
       </nav>
     </section>
   </main>
+
+  //TODO: Colocar um botao para ter envio de e-mail, igual na tarefa
 
   <script>
     var page = $("html, body");
