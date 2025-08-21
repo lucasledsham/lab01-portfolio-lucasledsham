@@ -3,6 +3,8 @@ const translations = {
   pt: {
     home: "Início",
     projects: "Projetos",
+    aboutMe: "Sobre Mim",
+    contact: "Contato",
     welcome: "Bem-vindo (a)!",
     name: "Meu nome é Lucas Ledsham.",
     about:
@@ -27,8 +29,10 @@ const translations = {
       'Desenvolvido por <a href="https://www.linkedin.com/in/lucas-nunes-leal-ledsham-0048b621a/" target="_blank" rel="noopener noreferrer" id="lucas">Lucas Ledsham</a>',
   },
   en: {
-    home: "home",
+    home: "Home",
     projects: "Projects",
+    aboutMe: "About Me",
+    contact: "Contact",
     welcome: "Hey there!",
     name: "I am Lucas Ledsham.",
     about:
@@ -81,8 +85,10 @@ document.getElementById("lang-btn").addEventListener("click", () => {
   document.querySelector("#hrInnovate-tradutor").innerHTML = t.hrInnovate;
   document.querySelector("#sofia-tradutor").innerHTML = t.sofia;
   document.querySelector("#desenvolvido-por").innerHTML = t.desenvolvido;
-  document.querySelector("#inicio-tradutor").innerHTML = t.home;
-  document.querySelector("#projetos").innerHTML = t.projects;
+  document.querySelector("#inicio-tradutor a").innerHTML = t.home;
+  document.querySelector("#projetos a").innerHTML = t.projects;
+  document.querySelector("#sobreMim a").innerHTML = t.aboutMe;
+  document.querySelector("#contato a").innerHTML = t.contact;
 
   // Troca a bandeira
   const langFlag = document.getElementById("lang-flag");
