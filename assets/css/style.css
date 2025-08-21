@@ -72,23 +72,23 @@ p {
   font-weight: 500;
 }
 
-.projetos a,
-.formacao a,
-.contato a {
+#projetos a,
+#formacao a,
+#contato a {
   color: rgb(47, 57, 15, 0.45);
 }
 
-.projetos a:hover,
-.formacao a:hover,
-.contato a:hover {
+#projetos a:hover,
+#formacao a:hover,
+#contato a:hover {
   color: #263008;
 }
 
-.inicio a {
+#inicio-tradutor a {
   color: #263008;
 }
 
-.detalhe {
+#detalhe {
   width: 50px;
   position: absolute;
   right: 513px;
