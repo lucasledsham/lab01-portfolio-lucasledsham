@@ -7,42 +7,81 @@
   <title>Lucas Ledsham - Seja Bem-vindo (a)</title>
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="shortcut icon" href="./assets/fotos/favicon.ico" type="image/x-icon">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Crimson+Text&family=Playfair+Display:wght@500;700;900&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body id="seta-anchor">
 
   <!-- Menu -->
   <header class="header">
-    <h1>Logo</h1>
+    <a class="logo" href="./index.html"><img src="./assets/fotos/logo.svg" alt="Logo Lucas Ledsham"></a>
 
     <nav class="primaria">
       <ul class="menu">
         <li class="inicio"><a href="./index.html">Início</a></li>
         <li class="projetos"><a href="/">Projetos</a></li>
-        <li class="formacao"><a href="/">Formação</a></li>
+        <li class="formacao"><a class="anchor" href="#form">Formação</a></li>
         <li class="contato"><a href="./pages/contato.html">Contato</a></li>
+        <button id="lang-btn">
+          <img id="lang-flag" src="./assets/icones/reino-unido.svg" alt="English" width="30" />
+        </button>
       </ul>
     </nav>
   </header>
 
+  <img class="detalhe" src="./assets/fotos/detalhe.svg" alt="">
   <!-- /menu -->
 
   <main>
     <section id="apresentacao" aria-label="Apresentação">
       <div id="texto">
-        <h1>Bem-vindo (a)!</h1>
-        <h1>Meu nome é Lucas Ledsham.</h1>
+        <h1 class="conteudo">Bem-vindo (a)!</h1>
+        <h1 class="conteudo">Meu nome é Lucas Ledsham.</h1>
         <p class="apresentacao-texto">Sou apaixonado por tecnologia e, no meu tempo livre, estou sempre desenvolvendo novos projetos e buscando constantemente mais conhecimento. Nesta página, você poderá conferir alguns dos projetos nos quais dediquei meu tempo e empenho.</p>
-        <h3>TECNOLOGIAS</h3>
+        <div id="tecnologias" class="conteudo">
+          <div class="rolagem" data-direcao="direita" data-velocidade="devagar">
+            <div class="rolagem__interna">
+              <div class="card">
+                <img src="./assets/icones/JS2.svg" alt="">
+              </div>
+              <div class="card">
+                <img src="./assets/icones/TypeScript.svg" alt="">
+              </div>
+              <div class="card">
+                <img src="./assets/icones/Java2.svg" alt="">
+              </div>
+              <div class="card">
+                <img src="./assets/icones/spring-logo.png" alt="">
+              </div>
+              <div class="card">
+                <img src="./assets/icones/Dart.svg" alt="">
+              </div>
+              <div class="card">
+                <img src="./assets/icones/flutter-logo.png" alt="">
+              </div>
+              <div class="card">
+                <img src="./assets/icones/CSharp.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
+      <div class="desenho">
+        <img src="./assets/fotos/desenho.svg" alt="Desenho flor">
+      </div>
     </section>
 
     <section id="projetos-secao">
       <div class="projetos-div">
-        <h1>MOCKUP</h1>
+        <img class="projeto-mockup" src="./assets/fotos/PBPT-Mockup.png" alt="Mockup SOFIA">
         <div class="projeto-info">
-          <h1>LOGO PROJETO</h1>
+          <a href="https://github.com/lucasledsham/bhparatodos" target="_blank" rel="noopener noreferrer"><img id="pbpt-logo" src="./assets/fotos/pvpt-logo.svg" alt="PBPT Logo"></a>
           <div class="projeto-texto">
             <p>O Portal BH Para Todos é uma plataforma que reúne diversos projetos sociais de Belo Horizonte e região, com o objetivo de proporcionar aos cidadãos a oportunidade de conhecer e se conectar com essas iniciativas. O portal visa facilitar a divulgação dessas ações, permitindo que cada vez mais pessoas possam conhecê-las.</p>
           </div>
@@ -61,9 +100,9 @@
       </div>
 
       <div class="projetos-div">
-        <h1>MOCKUP</h1>
+        <img class="projeto-mockup" src="./assets/fotos/HR-Mockup.png" alt="Mockup HR Innovate">
         <div class="projeto-info">
-          <h1>LOGO PROJETO</h1>
+          <a href="https://github.com/lucasledsham/HRInnovate" target="_blank" rel="noopener noreferrer"><img id="hr-logo" src="./assets/fotos/HR-Logo.png" alt="HR Innovate Logo"></a>
           <div class="projeto-texto">
             <p>O HR Innovate é um sistema destinado a automatizar processos críticos em um departamento de Recursos Humanos, focando em uma área em essencial: Recrutamento e Seleção. O objetivo é aumentar a eficiência operacional, reduzir erros e melhorar a experiência tanto dos candidatos quanto dos profissionais de RH, integrando e otimizando todas as etapas do recrutamento, desde a publicação de vagas até a contratação.</p>
           </div>
@@ -84,9 +123,9 @@
       </div>
 
       <div class="projetos-div">
-        <h1>MOCKUP</h1>
+        <img class="projeto-mockup" src="./assets/fotos/mockup-SOFIA.png" alt="Mockup SOFIA">
         <div class="projeto-info">
-          <h1>LOGO PROJETO</h1>
+          <a href="https://github.com/lucasledsham/SOFIA" target="_blank" rel="noopener noreferrer"><img src="./assets/fotos/sofia-logo.svg" alt="SOFIA Logo"></a>
           <div class="projeto-texto">
             <p>A SOFIA - Sistema Online Facilitador para Idade Avançada, surgiu para auxiliar os cidadãos de idade avançada, trazendo a proposta de solucionar o problema de falta de informação sobre segurança digital e proporcionando uma plataforma de fácil acessibilidade com informações atualizadas, afim de evitar que mais pessoas se tornem vítimas dos golpes aplicados online.</p>
           </div>
@@ -109,9 +148,9 @@
     <!-- Formação -->
 
     <section id="form" aria-label="Formação">
-      <h2 class="">Formação</h2>
+      <h2 class="subtitulo">Formação</h2>
       <div>
-        <p id="formacao-texto">Possuo graduação em <strong>Publicidade e Propaganda</strong>, área que me proporcionou contato e me fez apaixonar por tecnologia. Atualmente estou cursando o 2º período em <strong>Engenharia de Software</strong> pela PUC Minas. Além disso, estou constantemente estudando por conta própria e realizando cursos online.</p>
+        <p id="formacao-texto">Possuo graduação em <strong>Publicidade e Propaganda</strong>, área que me proporcionou contato e me fez apaixonar por tecnologia. Atualmente estou cursando o 4º período em <strong>Engenharia de Software</strong> pela PUC Minas. Além disso, estou constantemente estudando por conta própria e realizando cursos online.</p>
       </div>
 
       <ul class="faculdade-lista">
@@ -170,6 +209,7 @@
   <!--/ Footer -->
 
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/tradutor.js"></script>
 
 </body>
 
