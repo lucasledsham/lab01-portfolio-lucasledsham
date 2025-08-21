@@ -4,26 +4,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projetos</title>
+  <title>Projetos | Lucas Ledsham</title>
+  <link rel="stylesheet" href="../assets/css/projetos.css">
+  <link rel="shortcut icon" href="../assets/fotos/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Crimson+Text&family=Playfair+Display:wght@500;700;900&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
-  <section id="projetos-secao">
+
+  <!-- Menu -->
+  <header class="header">
+    <a class="logo" href="../index.html"><img src="../assets/fotos/logo.svg" alt="Logo Lucas Ledsham"></a>
+
+    <nav class="primaria">
+      <ul class="menu">
+        <li class="inicio" id="inicio-tradutor"><a href="../index.html">Início</a></li>
+        <li id="projetos"><a href="./pages/projetos.html">Projetos</a></li>
+        <li id="sobreMim"><a class="anchor">Sobre Mim</a></li>
+        <li id="contato"><a href="./pages/contato.html">Contato</a></li>
+        <button id="lang-btn">
+          <img id="lang-flag" src="../assets/icones/reino-unido.svg" alt="English" width="30" />
+        </button>
+      </ul>
+    </nav>
+  </header>
+
+  <img id="detalhe" src="../assets/fotos/detalhe.svg" alt="">
+  <!-- /menu -->
+
+  <main id="projetos-secao">
     <div class="projetos-div">
-      <img class="projeto-mockup" src="./assets/fotos/PBPT-Mockup.png" alt="Mockup SOFIA">
+      <img class="projeto-mockup" src="../assets/fotos/PBPT-Mockup.png" alt="Mockup SOFIA">
       <div class="projeto-info">
-        <a href="https://github.com/lucasledsham/bhparatodos" target="_blank" rel="noopener noreferrer"><img id="pbpt-logo" src="./assets/fotos/pvpt-logo.svg" alt="PBPT Logo"></a>
+        <a href="https://github.com/lucasledsham/bhparatodos" target="_blank" rel="noopener noreferrer"><img id="pbpt-logo" src="../assets/fotos/pvpt-logo.svg" alt="PBPT Logo"></a>
         <div class="projeto-texto">
           <p id="pbpt-tradutor">O Portal BH Para Todos é uma plataforma que reúne diversos projetos sociais de Belo Horizonte e região, com o objetivo de proporcionar aos cidadãos a oportunidade de conhecer e se conectar com essas iniciativas. O portal visa facilitar a divulgação dessas ações, permitindo que cada vez mais pessoas possam conhecê-las.</p>
         </div>
         <div class="projeto-tecnologias">
-          <img src="./assets/icones/html.svg" alt="">
-          <img src="./assets/icones/css.svg" alt="">
-          <img src="./assets/icones/javascript.svg" alt="">
+          <img src="../assets/icones/html.svg" alt="">
+          <img src="../assets/icones/css.svg" alt="">
+          <img src="../assets/icones/javascript.svg" alt="">
         </div>
         <div class="projeto-github">
           <a href="https://github.com/lucasledsham/bhparatodos" target="_blank" rel="noopener noreferrer">
-            <img src="./assets/icones/github.svg" alt="">
+            <img src="../assets/icones/github.svg" alt="">
             <h2>Confira o GitHub do Projeto</h2>
           </a>
         </div>
@@ -31,27 +60,78 @@
     </div>
 
     <div class="projetos-div">
-      <img class="projeto-mockup" src="./assets/fotos/HR-Mockup.png" alt="Mockup HR Innovate">
+      <img class="projeto-mockup" src="../assets/fotos/mockup-SOFIA.png" alt="Mockup SOFIA">
       <div class="projeto-info">
-        <a href="https://github.com/lucasledsham/HRInnovate" target="_blank" rel="noopener noreferrer"><img id="hr-logo" src="./assets/fotos/HR-Logo.png" alt="HR Innovate Logo"></a>
+        <a href="https://github.com/lucasledsham/SOFIA" target="_blank" rel="noopener noreferrer"><img id="sofia-logo" src="../assets/fotos/sofia-logo.svg" alt="SOFIA Logo"></a>
         <div class="projeto-texto">
-          <p id="hrInnovate-tradutor">O HR Innovate é um sistema destinado a automatizar processos críticos em um departamento de Recursos Humanos, focando em uma área em essencial: Recrutamento e Seleção. O objetivo é aumentar a eficiência operacional, reduzir erros e melhorar a experiência tanto dos candidatos quanto dos profissionais de RH, integrando e otimizando todas as etapas do recrutamento, desde a publicação de vagas até a contratação.</p>
+          <p id="hrInnovate-tradutor">A SOFIA - Sistema Online Facilitador para Idade Avançada, surgiu para auxiliar os cidadãos de idade avançada, trazendo a proposta de solucionar o problema de falta de informação sobre segurança digital e proporcionando uma plataforma de fácil acessibilidade com informações atualizadas, afim de evitar que mais pessoas se tornem vítimas dos golpes aplicados online.</p>
         </div>
         <div class="projeto-tecnologias">
-          <img class="imagem" src="./assets/icones/java.svg" alt="">
-          <img class="imagem" src="./assets/icones/sql.svg" alt="">
-          <img class="imagem" src="./assets/icones/html.svg" alt="">
-          <img class="imagem" src="./assets/icones/css.svg" alt="">
-          <img class="imagem" src="./assets/icones/javascript.svg" alt="">
+          <img class="imagem" src="../assets/icones/html.svg" alt="">
+          <img class="imagem" src="../assets/icones/css.svg" alt="">
+          <img class="imagem" src="../assets/icones/javascript.svg" alt="">
         </div>
         <div class="projeto-github">
-          <a href="https://github.com/lucasledsham/HRInnovate" target="_blank" rel="noopener noreferrer">
-            <img src="./assets/icones/github.svg" alt="">
+          <a href="https://github.com/lucasledsham/SOFIA" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/icones/github.svg" alt="">
             <h2>Confira o GitHub do Projeto</h2>
           </a>
         </div>
       </div>
     </div>
+
+    <div class="projetos-div">
+      <img class="projeto-mockup" src="../assets/fotos/HR-Mockup.png" alt="Mockup HR Innovate">
+      <div class="projeto-info">
+        <a href="https://github.com/lucasledsham/HRInnovate" target="_blank" rel="noopener noreferrer"><img id="hr-logo" src="../assets/fotos/HR-Logo.png" alt="HR Innovate Logo"></a>
+        <div class="projeto-texto">
+          <p id="hrInnovate-tradutor">O HR Innovate é um sistema destinado a automatizar processos críticos em um departamento de Recursos Humanos, focando em uma área em essencial: Recrutamento e Seleção. O objetivo é aumentar a eficiência operacional, reduzir erros e melhorar a experiência tanto dos candidatos quanto dos profissionais de RH, integrando e otimizando todas as etapas do recrutamento, desde a publicação de vagas até a contratação.</p>
+        </div>
+        <div class="projeto-tecnologias">
+          <img class="imagem" src="../assets/icones/java.svg" alt="">
+          <img class="imagem" src="../assets/icones/sql.svg" alt="">
+          <img class="imagem" src="../assets/icones/html.svg" alt="">
+          <img class="imagem" src="../assets/icones/css.svg" alt="">
+          <img class="imagem" src="../assets/icones/javascript.svg" alt="">
+        </div>
+        <div class="projeto-github">
+          <a href="https://github.com/lucasledsham/HRInnovate" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/icones/github.svg" alt="">
+            <h2>Confira o GitHub do Projeto</h2>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
+
+<!-- Footer -->
+<footer id="footer">
+  <h4 class="conversar-titulo">Vamos conversar?</h4>
+
+  <div id="conversar">
+    <p class="conversar-texto">Me envie um email para <span><a class="conversar-email" href="mailto:lucasnunesleal@gmail.com" target="_blank" rel="noopener noreferrer">lucasnunesleal@gmail.com</a></span></p>
+    <p class="conversar-texto">Fico à sua disposição!</p>
+  </div>
+
+  <ul id="links">
+    <li><a class="links-email" href="mailto:lucasnunesleal@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></li>
+    <li><a class="links-git" href="https://github.com/lucasledsham" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    <li><a class="links-linkedin" href="https://www.linkedin.com/in/lucas-nunes-leal-ledsham-0048b621a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+    <li><a class="links-curriculo" href="https://drive.google.com/file/d/1XzZjzgyJu7StcGKtExSm9YWqDGQiNrv1/view" target="_blank" rel="noopener noreferrer">Currículo </a></li>
+    <li><a class="links-wpp" href="https://web.whatsapp.com/send?phone=5531971670507" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+    <li><a class="links-instagram" href="https://www.instagram.com/lucasnunesll/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+  </ul>
+
+  <a href=".logo" class="anchor"><img id="seta" src="../assets/fotos/seta.svg" alt=""></a>
+
+  <div id="fim">
+    <p id="desenvolvido-por">Desenvolvido por <a href="https://www.linkedin.com/in/lucas-nunes-leal-ledsham-0048b621a/" target="_blank" rel="noopener noreferrer" id="lucas">Lucas Ledsham</a></p>
+  </div>
+</footer>
+
+<!--/ Footer -->
+
+<script src="../assets/js/script.js"></script>
 
 </html>
