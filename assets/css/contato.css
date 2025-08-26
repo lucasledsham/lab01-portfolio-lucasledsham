@@ -195,30 +195,38 @@ main {
 /* Caixa do formulário */
 .formulario-contato {
   background: white;
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: 10px;
   width: 320px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   position: relative;
+  padding: 40px;
 }
 
 .formulario-contato h2 {
   margin-top: 0;
+  font-family: "Quicksand", sans-serif;
+  color: #263008;
+  margin-bottom: 30px;
 }
 
 .formulario-contato label {
   display: block;
   margin-top: 10px;
   font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  color: #263008;
 }
 
 .formulario-contato input,
-.formulario-contato textarea {
+.formulario-contato textarea,
+#botao-enviar {
   width: 100%;
   padding: 8px;
   margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 #botao-enviar {
@@ -238,6 +246,10 @@ main {
   color: #fff;
   cursor: pointer;
   justify-self: end;
+  position: absolute;
+  left: 335px;
+  top: 45px;
+  border-radius: 5px;
 }
 
 .botao-fechar:hover {
