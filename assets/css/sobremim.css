@@ -113,6 +113,44 @@ p {
 
 /* Menu */
 
+/* Main */
+
+main {
+  display: grid;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 100px;
+  grid-template-columns: 1fr;
+  gap: 60px;
+}
+
+#foto-cartoon {
+  height: 730px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.projeto-info {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  margin-left: 50px;
+}
+
+.projetos-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.projeto-info p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.4rem;
+  display: grid;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
 /* Footer */
 
 #footer {
