@@ -141,20 +141,27 @@ main {
   margin: 0 auto;
 }
 
-.projeto-info {
+#perfil-info {
   display: grid;
   align-content: center;
   justify-items: center;
-  margin-left: 50px;
+  gap: 30px;
 }
 
 .projetos-div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+  align-items: center;
 }
 
-.projeto-info p {
+.informacoes-container {
+  display: grid;
+  align-content: center;
+  gap: 10px;
+}
+
+.informacoes-container p {
   font-family: "Quicksand", sans-serif;
   font-size: 1.4rem;
   display: grid;
