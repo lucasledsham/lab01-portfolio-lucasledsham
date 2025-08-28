@@ -7,8 +7,6 @@ const translations = {
     contact: "Contato",
     welcome: "Bem-vindo (a)!",
     name: "Meu nome é Lucas Ledsham.",
-    about:
-      "Sou apaixonado por tecnologia e, no meu tempo livre, estou sempre desenvolvendo novos projetos e buscando constantemente mais conhecimento. Aqui, você poderá conferir alguns dos projetos nos quais dediquei meu tempo e empenho.",
     formacao: "Formação",
     formacaoTexto:
       "Possuo graduação em <strong>Publicidade e Propaganda</strong>, área que me proporcionou contato e me fez apaixonar por tecnologia. Atualmente estou cursando o 2º período em <strong>Engenharia de Software</strong> pela PUC Minas. Além disso, estou constantemente estudando por conta própria e realizando cursos online.",
@@ -28,8 +26,6 @@ const translations = {
     contact: "Contact",
     welcome: "Hey there!",
     name: "I am Lucas Ledsham.",
-    about:
-      "I am passionate about technology and, in my free time, I am always developing new projects and constantly seeking more knowledge. On this page, you can check out some of the projects I have dedicated my time and effort to.",
     formacao: "Education",
     formacaoTexto:
       "I have a degree in <strong>Advertising and Propaganda</strong>, an area that brought me closer and made me passionate about technology. I am currently studying <strong>Software Engineering</strong> at PUC Minas. In addition, I am constantly self-studying and taking online courses.",
@@ -53,7 +49,6 @@ document.getElementById("lang-btn").addEventListener("click", () => {
   // Atualiza os textos
   document.querySelector("#apresentacao h1:nth-child(1)").innerHTML = t.welcome;
   document.querySelector("#apresentacao h1:nth-child(2)").innerHTML = t.name;
-  document.querySelector(".apresentacao-texto").innerHTML = t.about;
   document
     .querySelectorAll(".projeto-github h2")
     .forEach((h2) => (h2.innerHTML = t.projectsTitle));
