@@ -8,7 +8,7 @@ const translations = {
     welcome: "Bem-vindo (a)!",
     name: "Meu nome é Lucas Ledsham.",
     about:
-      "Sou apaixonado por tecnologia e, no meu tempo livre, estou sempre desenvolvendo novos projetos e buscando constantemente mais conhecimento. Nesta página, você poderá conferir alguns dos projetos nos quais dediquei meu tempo e empenho.",
+      "Sou apaixonado por tecnologia e, no meu tempo livre, estou sempre desenvolvendo novos projetos e buscando constantemente mais conhecimento. Aqui, você poderá conferir alguns dos projetos nos quais dediquei meu tempo e empenho.",
     formacao: "Formação",
     formacaoTexto:
       "Possuo graduação em <strong>Publicidade e Propaganda</strong>, área que me proporcionou contato e me fez apaixonar por tecnologia. Atualmente estou cursando o 2º período em <strong>Engenharia de Software</strong> pela PUC Minas. Além disso, estou constantemente estudando por conta própria e realizando cursos online.",
