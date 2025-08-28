@@ -6,7 +6,7 @@ window.sr = ScrollReveal({ reset: false }); // Define reset para false
 sr.reveal(".conteudo", {
   duration: 3500,
 });
-sr.reveal(".apresentacao-texto", {
+sr.reveal("#icones-contato", {
   rotate: { x: 0, y: 50, z: 0 },
   duration: 5200,
 });

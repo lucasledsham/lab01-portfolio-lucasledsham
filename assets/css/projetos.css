@@ -18,6 +18,17 @@ body {
   color: white;
 }
 
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3b4518;
+  border-radius: 6px;
+}
+
 img {
   display: block;
   max-width: 100%;

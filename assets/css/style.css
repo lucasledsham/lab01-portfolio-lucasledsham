@@ -18,6 +18,17 @@ body {
   color: white;
 }
 
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3b4518;
+  border-radius: 6px;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -120,6 +131,7 @@ p {
   margin-right: 200px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .desenho img {
@@ -130,7 +142,8 @@ p {
 }
 
 #texto {
-  margin-top: 130px;
+  margin-top: 100px;
+  align-content: center;
 }
 
 .conteudo {
@@ -140,7 +153,7 @@ p {
 
 #apresentacao h1 {
   font-size: 3rem;
-  color: #3b4518;
+  color: #222b06;
   font-family: "Cormorant Garamond", serif;
   font-weight: 300;
 }
@@ -155,6 +168,17 @@ p {
   margin-top: 20px;
   font-family: "Quicksand", sans-serif;
   font-size: 1.4rem;
+}
+
+#icones-contato {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#icones-contato a img {
+  width: 30px;
 }
 
 /* TECNOLOGIAS */
