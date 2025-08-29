@@ -13,7 +13,7 @@ const translations = {
     formacaoTexto:
       "Possuo graduação em <strong>Publicidade e Propaganda</strong>, área que me proporcionou contato e me fez apaixonar por tecnologia. Atualmente estou cursando o 2º período em <strong>Engenharia de Software</strong> pela PUC Minas. Além disso, estou constantemente estudando por conta própria e realizando cursos online.",
     languages: "Idiomas",
-    ingles: "Inglês / Fluente",
+    ingles: "Inglês / Avançado",
     espanhol: "Espanhol / Intermediário",
     conversar: "Vamos conversar?",
     footer1: "Me envie um email para",
