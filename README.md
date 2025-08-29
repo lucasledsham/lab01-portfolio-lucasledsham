@@ -5,11 +5,6 @@ Este é um projeto de portfólio profissional criado para apresentar minhas habi
 
 ## 🖼️ Link do projeto publicado
 Clique no link abaixo para acessar o projeto na nuvem:
-```sh
-https://lucasledsham.vercel.app/
-
-```
-
 https://lucasledsham.vercel.app/
 
 ## 🛠 Tecnologias Utilizadas
