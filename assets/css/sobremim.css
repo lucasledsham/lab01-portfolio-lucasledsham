@@ -145,7 +145,7 @@ main {
   display: grid;
   align-content: center;
   justify-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .projetos-div {
@@ -161,9 +161,14 @@ main {
   gap: 10px;
 }
 
+.informacoes-container h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+}
+
 .informacoes-container p {
   font-family: "Quicksand", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   display: grid;
   gap: 15px;
   margin-bottom: 15px;
