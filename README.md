@@ -3,15 +3,17 @@
 ## 📖 Descrição do Projeto
 Este é um projeto de portfólio profissional criado para apresentar minhas habilidades, projetos desenvolvidos, formas de contato e outras informações relevantes sobre meu trabalho. 
 
-## 🖼️ Protótipos
-Protótipos das telas que serão desenvolvidas no projeto.
+## 🖼️ Link do projeto publicado
+Clique no link abaixo para acessar o projeto na nuvem:
+```sh
+https://lucasledsham.vercel.app/
 
-Tela Inicial (Sobre Mim, Projetos, Formação e Contato):  
-![Tela Inicial](./prototipos/tela-inicial.png)
+```
 
-Tela Contato:
-![Tela de Contato](./prototipos/tela-contato.png)  
+https://lucasledsham.vercel.app/
 
-## 🛠 Tecnologias Previstas
+## 🛠 Tecnologias Utilizadas
 - [ ] **Frontend:** HTML, CSS e JavaScript
+- [ ] **Framework CSS:** Bootstrap
+- [ ] **Bibliotecas:** jQuery e UNPKG
 
