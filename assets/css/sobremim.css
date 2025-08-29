@@ -169,6 +169,15 @@ main {
   margin-bottom: 15px;
 }
 
+/* Jornada */
+
+#minha-jornada {
+  display: grid;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 80px;
+}
+
 /* Footer */
 
 #footer {
