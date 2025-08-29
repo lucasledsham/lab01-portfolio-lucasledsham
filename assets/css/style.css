@@ -292,6 +292,35 @@ p {
   width: 30px;
 }
 
+/* APRESENTACAO RESPONSIVO */
+
+@media (max-width: 1180px) {
+  #apresentacao h1 {
+    font-size: 2.5rem;
+  }
+  #icones-contato a img {
+    width: 25px;
+  }
+  .card img {
+    height: 30px;
+  }
+}
+
+@media (max-width: 960px) {
+  .desenho {
+    display: none;
+  }
+  #apresentacao {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 750px) {
+  #apresentacao {
+    grid-template-columns: none;
+  }
+}
+
 /* TECNOLOGIAS */
 
 #tecnologias {

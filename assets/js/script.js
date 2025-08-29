@@ -26,12 +26,14 @@ sr.reveal(".subtitulo", { duration: 1800 });
 // /Subtitulo Formacao
 
 // Links
-sr.reveal(".links-email", { duration: 1200 });
-sr.reveal(".links-git", { duration: 1800 });
-sr.reveal(".links-linkedin", { duration: 2400 });
-sr.reveal(".links-curriculo", { duration: 3000 });
-sr.reveal(".links-wpp", { duration: 3600 });
-sr.reveal(".links-instagram", { duration: 4200 });
+if (window.innerWidth > 1233) {
+  sr.reveal(".links-email", { duration: 1200 });
+  sr.reveal(".links-git", { duration: 1800 });
+  sr.reveal(".links-linkedin", { duration: 2400 });
+  sr.reveal(".links-curriculo", { duration: 3000 });
+  sr.reveal(".links-wpp", { duration: 3600 });
+  sr.reveal(".links-instagram", { duration: 4200 });
+}
 // /Links
 
 // ANIMACAO de Scroll para Anchors
