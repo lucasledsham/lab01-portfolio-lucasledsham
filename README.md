@@ -14,3 +14,12 @@ https://lucasledsham.vercel.app/
 - [ ] **Bibliotecas:** jQuery e UNPKG
 - [ ] **Serviço de integração:** FormSubmit
 
+## 📝 Instruções de uso
+# 1. Abra o terminal e execute o seguinte comando para clonar o repositório:
+
+```sh
+https://github.com/lucasledsham/lab01-portfolio-lucasledsham
+
+```
+
+#2. Abra o arquivo HTML pela porta de sua preferência ou diretamente da pasta do projeto clonado, clicando no arquivo index.html
