@@ -1,4 +1,6 @@
-// Dicionário de traduções
+// -----------------------------
+// 1. Dicionário de traduções
+// -----------------------------
 const translations = {
   pt: {
     home: "Início",
@@ -40,39 +42,106 @@ const translations = {
   },
 };
 
+// -----------------------------
+// 2. Idioma atual (default PT)
+// -----------------------------
 let currentLang = "pt";
 
-document.getElementById("lang-btn").addEventListener("click", () => {
-  currentLang = currentLang === "pt" ? "en" : "pt";
+// -----------------------------
+// 3. Função para aplicar tradução
+// -----------------------------
+function aplicarTraducao() {
   const t = translations[currentLang];
 
-  // Atualiza os textos
-  document.querySelector("#apresentacao h1:nth-child(1)").innerHTML = t.welcome;
-  document.querySelector("#apresentacao h1:nth-child(2)").innerHTML = t.name;
+  // Atualiza textos só se o elemento existir
+  const titulo1 = document.querySelector("#apresentacao h1:nth-child(1)");
+  if (titulo1) titulo1.innerHTML = t.welcome;
+
+  const titulo2 = document.querySelector("#apresentacao h1:nth-child(2)");
+  if (titulo2) titulo2.innerHTML = t.name;
+
   document
     .querySelectorAll(".projeto-github h2")
-    .forEach((h2) => (h2.innerHTML = t.projectsTitle));
-  document.querySelector("#form h2").innerHTML = t.formacao;
-  document.querySelector("#formacao-texto").innerHTML = t.formacaoTexto;
-  document.querySelector(".conversar-titulo").innerHTML = t.conversar;
-  document.querySelector(
-    "#conversar p:nth-child(1)"
-  ).innerHTML = `${t.footer1} <span><a class="conversar-email" href="mailto:lucasnunesleal@gmail.com" target="_blank" rel="noopener noreferrer">lucasnunesleal@gmail.com</a></span>`;
-  document.querySelector("#conversar p:nth-child(2)").innerHTML = t.footer2;
-  document.querySelector("#espanhol").innerHTML = t.espanhol;
-  document.querySelector("#ingles").innerHTML = t.ingles;
-  document.querySelector("#languages").innerHTML = t.languages;
-  document.querySelector("#desenvolvido-por").innerHTML = t.desenvolvido;
-  document.querySelector("#inicio-tradutor a").innerHTML = t.home;
-  document.querySelector("#projetos a").innerHTML = t.projects;
-  document.querySelector("#sobreMim a").innerHTML = t.aboutMe;
-  document.querySelector("#contato a").innerHTML = t.contact;
+    .forEach((h2) => (h2.innerHTML = t.projects));
+
+  const formacaoTitulo = document.querySelector("#form h2");
+  if (formacaoTitulo) formacaoTitulo.innerHTML = t.formacao;
+
+  const formacaoTexto = document.querySelector("#formacao-texto");
+  if (formacaoTexto) formacaoTexto.innerHTML = t.formacaoTexto;
+
+  const conversarTitulo = document.querySelector(".conversar-titulo");
+  if (conversarTitulo) conversarTitulo.innerHTML = t.conversar;
+
+  const conversarP1 = document.querySelector("#conversar p:nth-child(1)");
+  if (conversarP1) {
+    conversarP1.innerHTML = `${t.footer1} <span><a class="conversar-email" href="mailto:lucasnunesleal@gmail.com" target="_blank" rel="noopener noreferrer">lucasnunesleal@gmail.com</a></span>`;
+  }
+
+  const conversarP2 = document.querySelector("#conversar p:nth-child(2)");
+  if (conversarP2) conversarP2.innerHTML = t.footer2;
+
+  const espanhol = document.querySelector("#espanhol");
+  if (espanhol) espanhol.innerHTML = t.espanhol;
+
+  const ingles = document.querySelector("#ingles");
+  if (ingles) ingles.innerHTML = t.ingles;
+
+  const languages = document.querySelector("#languages");
+  if (languages) languages.innerHTML = t.languages;
+
+  const desenvolvido = document.querySelector("#desenvolvido-por");
+  if (desenvolvido) desenvolvido.innerHTML = t.desenvolvido;
+
+  const inicioTradutor = document.querySelector("#inicio-tradutor a");
+  if (inicioTradutor) inicioTradutor.innerHTML = t.home;
+
+  const projetos = document.querySelector("#projetos a");
+  if (projetos) projetos.innerHTML = t.projects;
+
+  const sobreMim = document.querySelector("#sobreMim a");
+  if (sobreMim) sobreMim.innerHTML = t.aboutMe;
+
+  const contato = document.querySelector("#contato a");
+  if (contato) contato.innerHTML = t.contact;
 
   // Troca a bandeira
+  // Troca a bandeira (detecta caminho correto)
   const langFlag = document.getElementById("lang-flag");
-  langFlag.src =
-    currentLang === "pt"
-      ? "./assets/icones/reino-unido.svg"
-      : "./assets/icones/brasil.svg";
-  langFlag.alt = currentLang === "pt" ? "English" : "Português";
+  if (langFlag) {
+    // verifica se a página atual está na raiz ou em subpasta
+    const isRoot =
+      window.location.pathname === "/" ||
+      window.location.pathname.endsWith("index.html");
+    const basePath = isRoot ? "./assets/icones/" : "../assets/icones/";
+
+    langFlag.src =
+      currentLang === "pt"
+        ? basePath + "reino-unido.svg"
+        : basePath + "brasil.svg";
+    langFlag.alt = currentLang === "pt" ? "English" : "Português";
+  }
+}
+
+// -----------------------------
+// 4. Carregar idioma salvo ao abrir página
+// -----------------------------
+window.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("lang");
+  if (savedLang) {
+    currentLang = savedLang;
+  }
+  aplicarTraducao();
 });
+
+// -----------------------------
+// 5. Botão para trocar idioma
+// -----------------------------
+const langBtn = document.getElementById("lang-btn");
+if (langBtn) {
+  langBtn.addEventListener("click", () => {
+    currentLang = currentLang === "pt" ? "en" : "pt";
+    localStorage.setItem("lang", currentLang); // 🔹 salva a escolha
+    aplicarTraducao();
+  });
+}
