@@ -74,20 +74,21 @@
     <div class="formulario-contato" onclick="event.stopPropagation()">
       <button class="botao-fechar" onclick="fecharFormulario()">✖</button>
       <h2>Enviar Mensagem</h2>
-      <form action="https://formsubmit.co/lucasnunesleal@gmail.com" method="POST" />
-      <label for="name">Nome</label>
-      <input type="text" name="name" id="name" required>
+      <form id="formContato" action="https://formsubmit.co/lucasnunesleal@gmail.com" method="POST">
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name" required>
 
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" required>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
 
-      <label for="message">Mensagem</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
 
-      <button id="botao-enviar" type="submit">Enviar</button>
-      <input type="hidden" name="_captcha" value="false">
-
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://lucasledsham.vercel.app/index.html">
+        <button id="botao-enviar" type="submit">Enviar</button>
       </form>
+      <div id="mensagem-sucesso" class="mensagem-sucesso"></div>
     </div>
   </div>
 
