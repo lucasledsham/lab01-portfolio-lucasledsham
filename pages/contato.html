@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -27,7 +28,13 @@
     <a class="logo" href="../index.html"><img src="../assets/fotos/logo.svg" alt="Logo Lucas Ledsham"></a>
 
     <nav class="primaria">
-      <ul class="menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle" class="menu-icon">
+        <i class="fa fa-bars"></i>
+        <i id="fechar-circulo" class="fa fa-times-circle"></i>
+      </label>
+
+      <ul class="menu menu-mobile">
         <li class="inicio" id="inicio-tradutor"><a href="../index.html">Início</a></li>
         <li id="projetos"><a href="../pages/projetos.html">Projetos</a></li>
         <li id="sobreMim"><a href="../pages/sobremim.html">Sobre Mim</a></li>

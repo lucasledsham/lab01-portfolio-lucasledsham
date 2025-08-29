@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Crimson+Text&family=Playfair+Display:wght@500;700;900&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body id="seta-anchor">
@@ -26,7 +27,13 @@
     <a class="logo" href="./index.html"><img src="./assets/fotos/logo.svg" alt="Logo Lucas Ledsham"></a>
 
     <nav class="primaria">
-      <ul class="menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle" class="menu-icon">
+        <i class="fa fa-bars"></i>
+        <i id="fechar-circulo" class="fa fa-times-circle"></i>
+      </label>
+
+      <ul class="menu menu-mobile">
         <li class="inicio" id="inicio-tradutor"><a href="./index.html">Início</a></li>
         <li id="projetos"><a href="./pages/projetos.html">Projetos</a></li>
         <li id="sobreMim"><a href="./pages/sobremim.html">Sobre Mim</a></li>
