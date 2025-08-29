@@ -38,6 +38,9 @@ const translations = {
     entreContato: "Entre em contato",
     curriculo: "Currículo",
     botaoContato: "Contato",
+    github: "Confira o GitHub do Projeto",
+    github1: "Confira o GitHub do Projeto",
+    github2: "Confira o GitHub do Projeto",
   },
   en: {
     home: "Home",
@@ -75,6 +78,9 @@ const translations = {
     entreContato: "Let's talk about it",
     curriculo: "Curriculum Vitae",
     botaoContato: "Contact",
+    github: "Check out the Project's GitHub",
+    github1: "Check out the Project's GitHub",
+    github2: "Check out the Project's GitHub",
   },
 };
 
@@ -96,9 +102,9 @@ function aplicarTraducao() {
   const titulo2 = document.querySelector("#apresentacao h1:nth-child(2)");
   if (titulo2) titulo2.innerHTML = t.name;
 
-  document
-    .querySelectorAll(".projeto-github h2")
-    .forEach((h2) => (h2.innerHTML = t.projects));
+  // document
+  //   .querySelectorAll(".projeto-github h2")
+  //   .forEach((h2) => (h2.innerHTML = t.projects));
 
   const formacaoTitulo = document.querySelector("#form h2");
   if (formacaoTitulo) formacaoTitulo.innerHTML = t.formacao;
@@ -167,6 +173,15 @@ function aplicarTraducao() {
 
   const objetivosTexto = document.querySelector("#objetivos-texto-tradutor");
   if (objetivosTexto) objetivosTexto.innerHTML = t.objetivosTexto;
+
+  const github = document.querySelector(".github-tradutor");
+  if (github) github.innerHTML = t.github;
+
+  const github1 = document.querySelector(".github-tradutor1");
+  if (github1) github1.innerHTML = t.github1;
+
+  const github2 = document.querySelector(".github-tradutor2");
+  if (github2) github2.innerHTML = t.github2;
 
   const entreContato = document.querySelector("#entre-contato");
   if (entreContato) entreContato.innerHTML = t.entreContato;
