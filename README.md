@@ -12,4 +12,5 @@ https://lucasledsham.vercel.app/
 - [ ] **Frontend:** HTML, CSS e JavaScript
 - [ ] **Framework CSS:** Bootstrap
 - [ ] **Bibliotecas:** jQuery e UNPKG
+- [ ] **Serviço de integração:** FormSubmit
 
